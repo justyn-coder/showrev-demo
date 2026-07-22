@@ -16,7 +16,7 @@ export function Counter({
     damping: 60,
     stiffness: 100,
   });
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-100px 0px" });
 
   useEffect(() => {
     if (isInView) {
