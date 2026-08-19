@@ -4,8 +4,6 @@ import { Check, DollarSign } from "lucide-react";
 const tiers = [
   {
     label: "Single Show",
-    price: "$8,500",
-    unit: "per show",
     tagline: "Full program. Prove the model.",
     highlight: false,
     items: [
@@ -20,9 +18,6 @@ const tiers = [
   },
   {
     label: "3-Show Pack",
-    price: "$7,000",
-    unit: "per show",
-    unitDetail: "($21K total)",
     tagline: "Foundation carries forward. Less ramp each time.",
     highlight: true,
     items: [
@@ -37,9 +32,6 @@ const tiers = [
   },
   {
     label: "Annual",
-    price: "$30,000",
-    unit: "up to 5 shows",
-    unitDetail: "($6K/show)",
     tagline: "Dedicated program. Always-on pipeline engine.",
     highlight: false,
     items: [
@@ -65,7 +57,7 @@ export function Investment() {
           className="mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold tracking-tight mb-4">Investment.</h2>
-          <p className="text-xl text-[#334155] font-sans">Start with one show. Lock in savings as you commit.</p>
+          <p className="text-xl text-[#334155] font-sans">We price the outcome, not the activity. Scoped to your shows, tied to results.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -88,14 +80,7 @@ export function Investment() {
               )}
 
               <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-3">{tier.label}</div>
-              <div className="flex items-baseline gap-2 mb-1">
-                <span className="text-4xl font-display font-bold">{tier.price}</span>
-              </div>
-              <div className="text-sm text-slate-400 mb-1">
-                {tier.unit}
-                {tier.unitDetail && <span className="ml-1.5 text-slate-400">{tier.unitDetail}</span>}
-              </div>
-              <p className="text-sm text-[#334155] italic mb-6">{tier.tagline}</p>
+              <p className="text-lg font-display font-bold text-[#0F172A] mb-6">{tier.tagline}</p>
 
               <ul className="space-y-3">
                 {tier.items.map((item, j) => (
@@ -119,9 +104,9 @@ export function Investment() {
             <DollarSign className="w-5 h-5 text-amber-600" />
           </div>
           <div>
-            <span className="font-display font-bold text-[#0F172A]">Performance bonus:</span>{" "}
+            <span className="font-display font-bold text-[#0F172A]">Pricing:</span>{" "}
             <span className="text-[#334155] font-sans">
-              Tied to a post-show metric we agree on before kickoff. Meetings booked? Pipeline at 30 days? Deals advanced? Let's talk about what makes sense.
+              Set in a working session, against a post-show metric we agree on before kickoff. Meetings booked? Pipeline at 30 days? Deals advanced? Tell us what the show has to return and we price to it.
             </span>
           </div>
         </motion.div>
